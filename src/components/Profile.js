@@ -102,7 +102,7 @@ export default function Profile() {
   const handleSignUp = () =>{
     var csrfToken='';
     axios
-      .get("https://172.31.20.2:8000/get-csrf-token/")
+      .get("https://52.65.20.224:8000/get-csrf-token/")
       .then((res) => {
         csrfToken = res.data.csrfToken;
       })
